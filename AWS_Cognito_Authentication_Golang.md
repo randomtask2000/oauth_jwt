@@ -6,11 +6,11 @@ This document outlines the steps and the sample code needed to authenticate a us
 
 Run the following commands to install the necessary packages:
 
-\```sh
+```sh
 go get github.com/aws/aws-sdk-go-v2
 go get github.com/aws/aws-sdk-go-v2/config
 go get github.com/aws/aws-sdk-go-v2/service/cognitoidentityprovider
-\```
+```
 
 ## Step 2: Create a Go File for Authentication
 
@@ -20,7 +20,7 @@ Create a file named `cognito_auth.go`.
 
 Below is the Go code to authenticate with AWS Cognito and retrieve a JWT.
 
-\```go
+```go
 package main
 
 import (
@@ -68,4 +68,4 @@ func main() {
     fmt.Printf("Access Token: %s
 ", *authResp.AuthenticationResult.AccessToken)
 }
-\```
+```
