@@ -39,3 +39,5 @@ The signature is used to verify that the sender of the JWT is who it says it is 
 
 While the payload of a JWT is base64url encoded, it is not encrypted. This means that the information contained in the JWT is easily decodable and should not contain sensitive information unless it is encrypted.
 
+
+
